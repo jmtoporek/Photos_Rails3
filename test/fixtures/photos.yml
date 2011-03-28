@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+photo_1:
+  id: 1
+  filename: train.jpg
+  thumbnail: train_t.jpg
+  description: My ride to work
+
+photo_2:
+  id: 2
+  filename: lighthouse.jpg
+  thumbnail: lighthouse_t.jpg
+  description: I take dates here all the time
