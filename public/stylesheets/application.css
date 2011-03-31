@@ -1,0 +1,132 @@
+.clear {
+	clear: left;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+body {
+  background-color: #0D2E4C;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+	margin-top:50px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  min-width:700px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+  overflow-x:auto;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.js_data {
+	display: none;
+}
+
+.left_div {
+  float: left;
+  width: 45%;
+  padding: 10px 10px 10px 10px;
+}
+
+.right_div {
+  float: right;
+  width: 45%;
+  padding: 10px 10px 10px 10px;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+
+/* added by JMT 2011.01.17 */
+table				{border:solid 1px #666; border-collapse:collapse; margin:5px auto;}
+table > thead 			{background-color:#666;text-align:center;}
+table > thead > tr > th	        {border:solid 1px #666;color:#FFFFFF;font-weight:bold; padding:5px 10px;}
+table > tbody > tr > td 	        {border-bottom:solid 1px #666; padding:5px 10px;border-left:0; border-right:0;}
+table > tbody > tr:nth-child(2n-1) 	{background-color:#EEE;}
+table > tbody > tr:nth-child(2n) 	{background-color:#FFF;}
+table > tbody > tr > td.icon_cell{text-align: center;}
+
+div#userLogin   {float:right; font-size:0.9em; padding:10px; border:solid 1px #999; background-color:#EEE;text-align:right;}
+/*
+ div#topNav      {border:solid 1px #999;}
+*/
+div.clearBoth   {clear:both;}
+
+div.showLabel, div.showValue	{float:left; padding:5px;}
+div.showLabel			{color:#888; text-align:right; width:140px; font-weight:bold;}
+div.showValue			{color:#000; text-align:left;}
+
+
+div#appDiv  			{background-color:#FFF; width:800px; border: #999; padding:10px; margin:auto; text-align:left; border: 3px #566D82 solid;}
+
+div#modelMenu   		{float:right; padding: 10px; border: solid 1px #666;}
+
+ul.modelList			{list-style-type:none; color:blue;}
+ul.modelList li			{list-style-type:none; border-bottom:blue;}
+ul.modelList li a		{color:blue;}

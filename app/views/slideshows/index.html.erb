@@ -1,21 +1,29 @@
 <h1>Listing slideshows</h1>
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @slideshows.each do |slideshow| %>
-  <tr>
-    <td><%= slideshow.name %></td>
-    <td><%= link_to 'Show', slideshow %></td>
-    <td><%= link_to 'Edit', edit_slideshow_path(slideshow) %></td>
-    <td><%= link_to 'Destroy', slideshow, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+    <thead>
+        <tr>
+            <% Slideshow.indexHeaderArr.each do |header| %>
+            <th><%= header.gsub('_',' ').capitalize %></th>
+            <% end %>
+            <% control_headers.each do |control| %>
+            <th><%= control.capitalize %></th>
+            <% end %>
+        </tr>
+    </thead>
+    <tbody>
+        <% @slideshows.each do |slideshow| %>
+        <% valArr = slideshow.attributes %>
+        <tr>
+            <% Slideshow.indexHeaderArr.each do |hashKey| %>
+            <td><%= valArr[hashKey] %></td>
+            <% end %>
+            <td><%= link_to 'Show', slideshow %></td>
+            <td><%= link_to 'Edit', edit_slideshow_path(slideshow) %></td>
+            <td><%= link_to 'Destroy', slideshow, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+        <% end %>
+    </tbody>
 </table>
 
 <br />

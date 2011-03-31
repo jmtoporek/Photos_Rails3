@@ -1,11 +1,7 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  position: 1
-  photo_id: 1
-  slideshow_id: 1
-
-two:
-  position: 1
-  photo_id: 1
-  slideshow_id: 1
+<% 1.upto(9) do |i| %> 
+slide_<%= i %>: 
+  id: <%= i %> 
+  position: <%= i %> 
+  photo_id: <%= i %> 
+  slideshow_id: 1 
+<% end %> 

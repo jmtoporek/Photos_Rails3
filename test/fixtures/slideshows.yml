@@ -1,7 +1,3 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-
-two:
-  name: MyString
+slideshow_1: 
+  id: 1 
+  name: Interesting Pictures

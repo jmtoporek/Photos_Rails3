@@ -7,6 +7,16 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div style="float:right; border: solid 1px blue;">
+    <div id="modelMenu">
+        <ul class="modelList">
+            <li><%= link_to 'Photos',   photos_path   %></li>
+            <li><%= link_to 'Slides', slides_path %></li>
+            <li><%= link_to 'Slideshows', slideshows_path %></li>
+            <li><%= link_to 'Categories', categories_path %></li>
+        </ul>
+    </div>
+  </div>
 
 <%= yield %>
 
